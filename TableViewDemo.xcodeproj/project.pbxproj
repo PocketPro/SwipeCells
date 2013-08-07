@@ -18,6 +18,7 @@
 		BBAE31DB17B0153500E97F86 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAE31DA17B0153500E97F86 /* Default-568h@2x.png */; };
 		BBAE31DE17B0153500E97F86 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAE31DC17B0153500E97F86 /* MainStoryboard.storyboard */; };
 		BBAE31E117B0153500E97F86 /* SMAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAE31E017B0153500E97F86 /* SMAViewController.m */; };
+		BBEF283B17B0384200233D53 /* UITableViewDisclosureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEF283A17B0384200233D53 /* UITableViewDisclosureCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		BBAE31DD17B0153500E97F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BBAE31DF17B0153500E97F86 /* SMAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAViewController.h; sourceTree = "<group>"; };
 		BBAE31E017B0153500E97F86 /* SMAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAViewController.m; sourceTree = "<group>"; };
+		BBEF283917B0384200233D53 /* UITableViewDisclosureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewDisclosureCell.h; sourceTree = "<group>"; };
+		BBEF283A17B0384200233D53 /* UITableViewDisclosureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewDisclosureCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				BBAE31DC17B0153500E97F86 /* MainStoryboard.storyboard */,
 				BBAE31DF17B0153500E97F86 /* SMAViewController.h */,
 				BBAE31E017B0153500E97F86 /* SMAViewController.m */,
+				BBEF283917B0384200233D53 /* UITableViewDisclosureCell.h */,
+				BBEF283A17B0384200233D53 /* UITableViewDisclosureCell.m */,
 				BBAE31CB17B0153500E97F86 /* Supporting Files */,
 			);
 			path = TableViewDemo;
@@ -177,6 +182,7 @@
 				BBAE31D117B0153500E97F86 /* main.m in Sources */,
 				BBAE31D517B0153500E97F86 /* SMAAppDelegate.m in Sources */,
 				BBAE31E117B0153500E97F86 /* SMAViewController.m in Sources */,
+				BBEF283B17B0384200233D53 /* UITableViewDisclosureCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +305,7 @@
 				BBAE31E617B0153500E97F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UITableViewDisclosureCell.h"
 
-@interface SMAViewController : UIViewController
+@interface SMAViewController : UITableViewController <UITableViewDisclosureCellDelegate>
+{
+    NSMutableSet *activeCells;
+    NSMutableSet *disclosedCells;
+}
 
 @end
