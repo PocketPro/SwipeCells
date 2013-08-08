@@ -31,11 +31,15 @@ typedef enum {
     if (self) {
 
         [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+
         
-        self.secondaryView = [[UIView alloc] init];
-        self.secondaryView.frame = self.contentView.bounds;
+        UIView *secondaryView = [[UIView alloc] init];
+        self.secondaryView = secondaryView;
+        self.secondaryView.translatesAutoresizingMaskIntoConstraints = NO;
         self.secondaryView.backgroundColor = [UIColor orangeColor];
         [self.contentView addSubview:self.secondaryView];
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[secondaryView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(secondaryView)]];
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[secondaryView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(secondaryView)]];        
         
         self.primaryView = [[UIView alloc] init];
         self.primaryView.frame = self.contentView.bounds;
@@ -60,8 +64,7 @@ typedef enum {
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.primaryView.frame = self.contentView.bounds;
-    self.secondaryView.frame = self.contentView.bounds;
+    self.primaryView.frame = [self frameForProgress:self.progress];
 }
 
 - (CGRect)frameForProgress:(float)progress
